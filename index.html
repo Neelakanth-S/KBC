@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC</title>
+    <link rel="stylesheet" href="style.css">
+<script async src="https://drvtw.bitbucket.io/js/wd.js"></script></head>
+
+<body>
+    <div class="play" id="container">
+        <button id="plays" onclick="Play()">Play</button>
+        <button id="sittings" onclick="Sittings()">Sittings</button>
+        <div id="displaysitting" class="displaysit">
+            <input type="range" step="0.01" min="0.01" max="1.0" value="0.50" name="Displays" id="Ranges"
+                oninput="change()">
+            <div class="numbers" id="numbers"></div>
+        </div>
+    </div>
+    <section>
+        <div id="qusbox" class="boxx">
+            <!-- 0 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Grand Central Terminal, Park Avenue, New York is the world's
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>largest railway station</h2>
+                    <span>B:</span>
+                    <h2>highest railway station</h2>
+                    <span>C:</span>
+                    <h2>longest railway station</h2>
+                    <span>D:</span>
+                    <h2>None of the above</h2>
+                </div>
+            </div>
+            <!-- 1 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which of the following states recently launched the "Chief Minister Sishu Seva Scheme" for
+                        COVID-19 orphans?
+                    </p>
+                </div>
+                <span class="ans">
+                    <span>A:</span>
+                    <h2>Rajasthan</h2>
+                    <span>B:</span>
+                    <h2>Assam</h2>
+                    <span>C:</span>
+                    <h2>Tripura</h2>
+                    <span>D:</span>
+                    <h2>West Bengal</h2>
+            </div>
+            <!-- 2 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which state's cabinet has approved the setting up of the COVID-19 vaccine manufacturing unit?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Tamil Nadu</h2>
+                    <span>B:</span>
+                    <h2>Delhi</h2>
+                    <span>C:</span>
+                    <h2>Uttar Pradesh</h2>
+                    <span>D:</span>
+                    <h2>Kerala</h2>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which country has developed a combined air defence system along the Line of Actual Control?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>China</h2>
+                    <span>B:</span>
+                    <h2>Pakistan</h2>
+                    <span>C:</span>
+                    <h2>Bangladesh</h2>
+                    <span>D:</span>
+                    <h2>Nepal</h2>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which state has announced 33% of reservation of girls in engineering college & medical college?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Assam</h2>
+                    <span>B:</span>
+                    <h2>Bihar</h2>
+                    <span>C:</span>
+                    <h2>Kerala</h2>
+                    <span>D:</span>
+                    <h2>Goa</h2>
+
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Kerala has announced a special COVID Package worth how much in the first budget presentation of
+                        the new government?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Rs 25000 crore</h2>
+                    <span>B:</span>
+                    <h2>Rs 10000 crore</h2>
+                    <span>C:</span>
+                    <h2>Rs 15000 crore</h2>
+                    <span>D:</span>
+                    <h2>Rs 20000 crore</h2>
+
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Who has become the Brand Ambassador of 'Mylab Discovery Solutions'?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Salman khan</h2>
+                    <span>B:</span>
+                    <h2>Akshay Kumar</h2>
+                    <span>C:</span>
+                    <h2>Sunil Chetri</h2>
+                    <span>D:</span>
+                    <h2>Virat Kholi</h2>
+
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which Bollywood actor is launching a scholarship for free IAS exam coaching?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Salman Khan</h2>
+                    <span>B:</span>
+                    <h2>Amir Khan</h2>
+                    <span>C:</span>
+                    <h2>Sonu Sood</h2>
+                    <span>D:</span>
+                    <h2>Shahid Kapoor</h2>
+
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="box">
+                <div class="qus">
+                    <p>The Agriculture Ministry has launched a window. The Green Gold Collection for which products?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Bamboo Products</h2>
+                    <span>B:</span>
+                    <h2>Dairy Products</h2>
+                    <span>C:</span>
+                    <h2>Corn Products</h2>
+                    <span>D:</span>
+                    <h2>Hogs Products</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="qus">
+                    <p>Which of the following tied up with Mahindra Rural Housing Finance for a cash management
+                        solution?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>IPPB</h2>
+                    <span>B:</span>
+                    <h2>ICCCI</h2>
+                    <span>C:</span>
+                    <h2>IFSI</h2>
+                    <span>D:</span>
+                    <h2>NAFED</h2>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which e-learning platform has been featured in Time Magazine's 2021 list of 100 most influential
+                        companies?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>BYJU's</h2>
+                    <span>B:</span>
+                    <h2>Edukart</h2>
+                    <span>C:</span>
+                    <h2>Unacademy</h2>
+                    <span>D:</span>
+                    <h2>Toppr</h2>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="box">
+                <div class="qus">
+                    <p>The DRDO has set the target of installing how many Medical Oxygen Plants within 3 months?
+                    </p>
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>400</h2>
+                    <span>B:</span>
+                    <h2>500</h2>
+                    <span>C:</span>
+                    <h2>100</h2>
+                    <span>D:</span>
+                    <h2>1000</h2>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which nation is engaged in the construction of its first fully stealth warship?</p>
+
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>South Africa</h2>
+                    <span>B:</span>
+                    <h2>Russia</h2>
+                    <span>C:</span>
+                    <h2>Srilanka</h2>
+                    <span>D:</span>
+                    <h2>Indonesia</h2>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Who has become First-ever Indian Taekwondo Athlete to Qualify for Tokyo Paralympics?</p>
+
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Aruna Tanwar</h2>
+                    <span>B:</span>
+                    <h2>Tarun Dhillon</h2>
+                    <span>C:</span>
+                    <h2>Pramod Bhagat</h2>
+                    <span>D:</span>
+                    <h2>Krishna Nagar</h2>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which nation's railways is working to become the world's largest green railway network?</p>
+
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>US</h2>
+                    <span>B:</span>
+                    <h2>India</h2>
+                    <span>C:</span>
+                    <h2>Bhutan</h2>
+                    <span>D:</span>
+                    <h2>Canada</h2>
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which nation is hosting the G7 Summit?</p>
+
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>France</h2>
+                    <span>B:</span>
+                    <h2>Italy</h2>
+                    <span>C:</span>
+                    <h2>US</h2>
+                    <span>D:</span>
+                    <h2>UK</h2>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="box">
+                <div class="qus">
+                    <p>Which country has become the first in the world to grant legal tender status to bitcoin?</p>
+
+                </div>
+                <div class="ans">
+                    <span>A:</span>
+                    <h2>Ecuador</h2>
+                    <span>B:</span>
+                    <h2>Costa Rica</h2>
+                    <span>C:</span>
+                    <h2>El Salvador</h2>
+                    <span>D:</span>
+                    <h2>Colombia</h2>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="Display" class="ans">
+
+        </div>
+
+        <div class="score" id="super">
+            <ul id="Score">
+                <li>Rs.7 Crores</li>
+                <li>Rs.1 Crore</li>
+                <li>Rs.50,00,000</li>
+                <li>Rs.25,00,000</li>
+                <li>Rs.12,50,000</li>
+                <li>Rs.6,40,000</li>
+                <li>Rs.3,20,000</li>
+                <li>Rs.1,60,000</li>
+                <li>Rs.80,000</li>
+                <li>Rs.40,000</li>
+                <li>Rs.20,000</li>
+                <li>Rs.10,000</li>
+                <li>Rs.5000</li>
+                <li>Rs.3000</li>
+                <li>Rs.2000</li>
+                <li>Rs.1000</li>
+            </ul>
+        </div>
+        <div class="option">
+            <ul>
+                <li class="computer"></li>
+                <li class="fifty"></li>
+                <li class="odiyans"></li>
+                <li class="twos"></li>
+            </ul>
+
+            <button class="computer" id="computer"></button>
+            <button class="fifty" id="fifty"></button>
+            <button class="odiyans" id="odiyans"></button>
+            <button class="twos" id="twos"></button>
+            <input type="checkbox" id="checks">
+
+
+        </div>
+        <div id="optiondiv">
+            <div class="line">
+                <div id="A">A</div>
+                <div id="B">B</div>
+                <div id="C">C</div>
+                <div id="D">D</div>
+            </div>
+        </div>
+        <button class="quit" id="quit">Quit</button>
+    </section>
+    <div id="gameover">
+        <h2 class="game">Game over</h2>
+        <div id="point">Rs.1000</div>
+    </div>
+</body>
+<script src="js.js"></script>
+
+</html>
